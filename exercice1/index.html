@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head >
+    <meta charset="utf-8">
+    <title>First Exercise: régime</title>
+    <link rel="stylesheet" href="regime.css">
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body  ng-app="check">
+    <h1>Régime</h1>
+    <div style="margin:20px 0px">
+      Bonjour Thierry
+    </div>
+
+    <div ng-controller="checkController">
+      <img width=200em src="IMG_2273.jpg" alt="">
+      <div style="margin:20px 0px">
+        <input type="text"
+          ng-model="mealList"
+          ng-upkeys= "displayNumberOfMeals();">
+      </div>
+
+      <div>
+        The list of meals is "{{mealList}}". The number of meals is {{mealNumber}}.
+      </div>
+
+      <button type="button" name="button">Check if too much</button>
+      <div class="answer"></div>
+  </div>
+  </body>
+</html>
